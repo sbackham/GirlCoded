@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Define a route to handle GET requests to the root URL
-app.get('/', (req, res) => {gi
+app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
