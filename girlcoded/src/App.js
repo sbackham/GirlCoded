@@ -1,12 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import FigmaDesign from './HomePage'; // Adjust the path as necessary
+import Navbar from './Navbar';
+import TeamIntro from './TeamIntro';
+import TeamMember from './TeamMember';
+import GroupPhoto from './GroupPhoto';
+import Comments from './Comments';
+import './App.css'; // Your main CSS file
 
 function App() {
   return (
     <div>
-      <FigmaDesign />
+      <Navbar />
+      <TeamIntro />
+      <TeamMember />
+      <GroupPhoto />
+      <Comments />
     </div>
   );
 }
