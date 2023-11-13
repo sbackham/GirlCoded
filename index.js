@@ -4,13 +4,16 @@ const express = require('express');
 // Create an instance of the express application
 const app = express();
 
+const path = require('path');
+
 // Define a port for the server to listen on
 const PORT = process.env.PORT || 3000;
 
-// Define a route to handle GET requests to the root URL
-/*app.get('/', (req, res) => {
-  res.send('Hello World!');
-});*/
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 // Start the server and listen on the defined port
 app.listen(PORT, () => {
