@@ -4,8 +4,10 @@ import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
 import HomePage from './Pages/HomePage';
+import TeamMemberPage from './Pages/TeamMemberPage';
 import Comments from './Components/Comments';
-import GroupPhoto from './Components/GroupPhoto';
+import groupPhoto from './Components/CatsPhoto.jpg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const teamMembers = [
@@ -29,15 +31,19 @@ function App() {
     }
 
   ];
-   const groupPhotoUrl = '/Components/CatsPhoto';
 
-  return (
-    <div className="App">
-      <Navbar />
-      <HomePage teamMembers={teamMembers} groupPhotoUrl={groupPhotoUrl} />
-      <Comments />
-    </div>
-  );
+ return (
+     <Router>
+       <Navbar />
+       <Routes>
+         <Route path="/" element={<HomePage teamMembers={teamMembers} groupPhotoUrl={groupPhoto} />} />
+         <Route path="/team/:memberName" element={<TeamMemberPage teamMembers={teamMembers} />} />
+         {/* ...other routes */}
+       </Routes>
+       <Comments />
+     </Router>
+   );
+
 }
 
 export default App;

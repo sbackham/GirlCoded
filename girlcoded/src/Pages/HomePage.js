@@ -5,7 +5,8 @@ import TeamMember from '../Components/TeamMember';
 import Comments from '../Components/Comments';
 import GroupPhoto from '../Components/GroupPhoto';
 
- const HomePage = ({ teamMembers }) => {
+const HomePage = ({ teamMembers, groupPhotoUrl }) => {
+
    return (
      <main className="home-page">
        <section className="team-section">
