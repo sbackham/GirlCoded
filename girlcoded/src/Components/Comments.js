@@ -11,11 +11,10 @@ const Comments = () => {
   const gradients = {
     '/': 'linear-gradient(to right, #385bf5 68%, #ffc8d3 32%)',
     '/login': 'linear-gradient(to right, #385bf5 58%, #ffc8d3 42%)',
-    '/team/sirena-backham': 'linear-gradient(to right, #385bf5 30%, #ffc8d3 70%)',
+    '/team/sirena-backham': 'linear-gradient(to right, #385bf5 30%, #ffc8d3 30%, #ffc8d3 100%)',
     '/team/diego-diaz': 'linear-gradient(to right, #385bf5 81%, #ffc8d3 19%)',
-    '/team/fatima-kammona': 'linear-gradient(to right, #385bf5 40%, #ffc8d3 60%)',
-    '/Pages/ProjectPage': 'linear-gradient(to right, #385bf5 49%, #ffc8d3 51%)',
-    // Add other paths and gradients as needed
+    '/team/fatima-kammona': 'linear-gradient(to right, #385bf5 40%, #ffc8d3 40%, #ffc8d3 100%)',
+    '/Pages/ProjectPage': 'linear-gradient(to right, #385bf5 49%, #ffc8d3 49%, #ffc8d3 100%)',
   };
 
   // Determine the current gradient based on the path
