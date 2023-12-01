@@ -1,24 +1,30 @@
+// src/Pages/HomePage.js
+
 import React from 'react';
-//import TeamIntro from '../Components/TeamIntro';
 import TeamMember from '../Components/TeamMember';
-//import GroupPhoto from '../Components/GroupPhoto';
-import Comments from '../Components/Comments';
 import GroupPhoto from '../Components/GroupPhoto';
+// ... other imports
 
 const HomePage = ({ teamMembers, groupPhotoUrl }) => {
+  return (
+    <main className="home-page">
+      {/* Title Section */}
+      <section style={{ textAlign: 'center', padding: '20px 0' }}>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', margin: '0', color: '#3563E9' }}>Team Girl Coded</h1>
+      </section>
 
-   return (
-     <main className="home-page">
-       <section className="team-section">
-         <div className="team-container">
-           {teamMembers.map(member => (
-             <TeamMember key={member.name} {...member} />
-           ))}
-         </div>
-       </section>
-       <GroupPhoto imageUrl={groupPhotoUrl} />
-     </main>
-   );
- };
+      {/* Team Section */}
+      <section className="team-section">
+              <div className="team-container">
+                {teamMembers.map(member => (
+                  <TeamMember key={member.name} {...member} />
+                ))}
+              </div>
+            </section>
+      <GroupPhoto imageUrl={groupPhotoUrl} />
+      {/* ... other sections */}
+    </main>
+  );
+};
 
- export default HomePage;
+export default HomePage;

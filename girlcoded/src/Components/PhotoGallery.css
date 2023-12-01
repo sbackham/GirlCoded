@@ -1,0 +1,14 @@
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates a responsive number of columns */
+  grid-gap: 10px; /* Space between photos */
+  justify-content: center; /* Centers photos within the grid */
+  padding: 20px; /* Padding around the entire gallery */
+}
+
+.gallery-photo {
+  width: 100%; /* Each photo takes full width of the grid column */
+  height: auto; /* Height is set automatically to maintain aspect ratio */
+  object-fit: cover; /* Ensures photos cover their area, can be cropped */
+  border-radius: 10px; /* Optional: Adds rounded corners to photos */
+}

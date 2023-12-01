@@ -6,8 +6,10 @@ import Navbar from './Components/Navbar';
 import HomePage from './Pages/HomePage';
 import TeamMemberPage from './Pages/TeamMemberPage';
 import Comments from './Components/Comments';
-import groupPhoto from './Components/CatsPhoto.jpg';
+import groupPhoto from './Images/CatsPhoto.jpg';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import sirenaImage from './Images/sirena.png';
+import SirenaPersonalPage from './Pages/SirenaPersonalPage';
 
 function App() {
   const teamMembers = [
@@ -15,7 +17,7 @@ function App() {
       name: 'Sirena Backham',
       title: 'Frontend Developer',
       bio: 'Sirena has a passion for creating intuitive user interfaces and has worked on numerous web development projects.',
-      imageUrl: '/path/to/sirena-image.jpg' // Replace with the actual path to the image file
+      imageUrl: sirenaImage // Replace with the actual path to the image file
     },
     {
       name: 'Diego Diaz',
@@ -33,17 +35,17 @@ function App() {
   ];
 
  return (
-     <Router>
-       <Navbar />
-       <Routes>
-         <Route path="/" element={<HomePage teamMembers={teamMembers} groupPhotoUrl={groupPhoto} />} />
-         <Route path="/team/:memberName" element={<TeamMemberPage teamMembers={teamMembers} />} />
-         {/* ...other routes */}
-       </Routes>
-       <Comments />
-     </Router>
-   );
-
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage teamMembers={teamMembers} groupPhotoUrl={groupPhoto} />} />
+        <Route path="/team/sirena-backham" element={<SirenaPersonalPage />} />
+        <Route path="/team/diego-diaz" element={<TeamMemberPage teamMember={teamMembers.find(m => m.name === 'Diego Diaz')} />} />
+        <Route path="/team/fatima-kammona" element={<TeamMemberPage teamMember={teamMembers.find(m => m.name === 'Fatima Kammona')} />} />
+      </Routes>
+      <Comments />
+    </Router>
+  );
 }
 
 export default App;

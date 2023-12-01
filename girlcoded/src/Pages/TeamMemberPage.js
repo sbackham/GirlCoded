@@ -1,23 +1,21 @@
+// src/Pages/TeamMemberPage.js
+
 import React from 'react';
-import { useParams } from 'react-router-dom';
 
-const TeamMemberPage = ({ teamMembers }) => {
-  const { memberName } = useParams();
+const TeamMemberPage = ({ teamMember }) => {
+  // No need to use useParams here, as the teamMember is being passed directly as a prop
 
-  const member = teamMembers.find(m =>
-    m.name.replace(/\s+/g, '-').toLowerCase() === memberName
-  );
-
-  if (!member) {
-    return <div>Member not found</div>;
+  if (!teamMember) {
+    return <div>Member not found.</div>;
   }
 
+  // Now you can directly use the teamMember prop to access the member's data
   return (
     <div className="team-member-page">
-      <h1>{member.name}</h1>
-      <img src={member.imageUrl} alt={member.name} />
-      <h2>{member.title}</h2>
-      <p>{member.bio}</p>
+      <img src={teamMember.imageUrl} alt={teamMember.name} className="team-member-image" />
+      <h1>{teamMember.name}</h1>
+      <h2>{teamMember.title}</h2>
+      <p>{teamMember.bio}</p>
       {/* Add more details as needed */}
     </div>
   );
