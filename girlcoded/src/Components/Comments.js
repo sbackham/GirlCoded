@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { observeAuthState, signOutUser } from '../authService';
 
 const Comments = () => {
+  const [user, setUser] = useState(null);
+
   useEffect(() => {
     const script = document.createElement('script');
     script.src = "https://unpkg.com/commentbox.io/dist/commentBox.min.js";
@@ -8,16 +11,28 @@ const Comments = () => {
     document.body.appendChild(script);
 
     script.onload = () => {
-      window.commentBox('my-project-id');
+      window.commentBox('5706269499326464-proj');
     };
 
     return () => {
       document.body.removeChild(script);
-    }
+    };
+  }, []);
+
+  useEffect(() => {
+    const unsubscribe = observeAuthState(setUser);
+    return unsubscribe; // Unsubscribe on unmount
   }, []);
 
   return (
-    <div className="commentbox"></div>
+    <div>
+
+        <div className="commentbox">
+          {/* Render comment box for logged-in users */}
+
+        </div>
+      )}
+    </div>
   );
 };
 

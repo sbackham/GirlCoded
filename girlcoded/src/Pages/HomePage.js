@@ -1,4 +1,3 @@
-
 import React from 'react';
 import TeamMember from '../Components/TeamMember';
 import GroupPhoto from '../Components/GroupPhoto';

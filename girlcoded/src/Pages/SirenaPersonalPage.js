@@ -10,7 +10,6 @@ import dubber from '../Images/SirenaPhotos/dubberdus.png';
 import engies from '../Images/SirenaPhotos/engies.png';
 import engies2 from '../Images/SirenaPhotos/engies2.png';
 
-
 const photos = [
   {
     id: 1,
@@ -61,6 +60,7 @@ const SirenaPersonalPage = () => {
             <h1>Hello! My name is Sirena Backham</h1>
             <p>Description about me and my personal interests and work: blah blah blah!</p>
           </div>
+
         </section>
         <ProjectSection projects={projects} />
         <div className="RFID-Project">

@@ -2,7 +2,7 @@ import React from 'react';
 import './TeamMember.css';
 import { Link } from 'react-router-dom';
 
-const TeamMember = ({ name, title, bio, imageUrl }) => {
+const TeamMember = ({ name, title, bio, skills, interests, imageUrl }) => {
 
 
   return (
@@ -13,6 +13,8 @@ const TeamMember = ({ name, title, bio, imageUrl }) => {
                 </Link>
       <p className="member-title">{title}</p>
       <p className="member-bio">{bio}</p>
+      <p className="member-skills">{skills}</p>
+      <p className="member-interests">{interests}</p>
     </div>
   );
 };
