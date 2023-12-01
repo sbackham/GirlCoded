@@ -19,9 +19,9 @@ function App() {
     {
       name: 'Sirena Backham',
       title: 'Computer Science and Engineering Major',
-      bio: 'Sirena is a CSE with a FA in Big Data. She has a passion for creating intuitive user interfaces and has worked on numerous web development projects.',
-      skills:'Skills: hi',
-      interests:'Interests: hi',
+      bio: 'Sirena is a CSE with a FA in Big Data. She is a 4th year student at the University of Iowa. She has a passion for creating intuitive user interfaces and has worked on numerous web development projects. She also has a passion for working in teams with fellow electrical engineers to create well-rounded and sophistaticated IoTs.',
+      skills:'Skills: Python, C++ Java, HTML, JavaScript, CSS',
+      interests:'Interests: Full Stack Development, IoTs, Animals, Pottery, Hiking',
       imageUrl: sirenaImage // Replace with the actual path to the image file
     },
     {

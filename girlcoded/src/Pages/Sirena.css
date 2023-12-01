@@ -1,0 +1,28 @@
+a {
+  color: #800080; /* Purple links */
+}
+
+a:hover {
+  color: #A020F0; /* A different shade of purple on hover */
+}
+
+/* Style for a specific button or element */
+.button {
+  background-color: #800080;
+  color: white;
+  /* ... other button styles ... */
+}
+h2 {
+  color: #800080; /* Purple color */
+}
+body {
+  background-color: #FADADD; /* Baby pink background */
+  /* ... other styles ... */
+}
+
+/* ... other global styles ... */
+#projects {
+  /* ... existing styles ... */
+  border-top: 3px solid #800080; /* Purple top border */
+}
+
