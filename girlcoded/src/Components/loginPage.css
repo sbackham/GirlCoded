@@ -3,16 +3,19 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #fff; /* or any preferred background color */
+  /* Using a linear gradient to create the split backdrop */
+ /* background: linear-gradient(to right, #add8e6 58%, #ffc0cb 4%); /* Adjust the colors to match the exact shades you want */
+  background: linear-gradient(to right, #385bf5 58%, #ffc8d3 42%); /* Adjust the colors to match the exact shades you want */
 }
 
 .login-form {
-  padding: 60px; 
-  background: #fff;
+  padding: 60px;
+  background: #fff; /* Ensure the form background is white */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center;
-  background-color: #7cc6fe;
+  max-width: 400px; /* Optional: Constrain the width of the form */
+  margin: auto; /* Center the form in the flex container */
 }
 
 .login-form h1 {
