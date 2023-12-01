@@ -20,7 +20,6 @@ const projects = [
   // ... more projects
 ];
 
-
 const FatimaPersonalPage = () => {
   return (
     <>
