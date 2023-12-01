@@ -1,4 +1,3 @@
-// src/Pages/TeamMemberPage.js
 
 import React from 'react';
 

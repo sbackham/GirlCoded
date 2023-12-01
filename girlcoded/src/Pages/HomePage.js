@@ -1,4 +1,3 @@
-// src/Pages/HomePage.js
 
 import React from 'react';
 import TeamMember from '../Components/TeamMember';

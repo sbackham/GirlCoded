@@ -1,4 +1,3 @@
-// src/Components/PhotoGallery.js
 
 import React, { useState } from 'react';
 import Lightbox from './Lightbox'; // Import the Lightbox component
