@@ -12,6 +12,7 @@ import SirenaPersonalPage from './Pages/SirenaPersonalPage';
 import LoginPage from './Components/loginPage';
 import PrivateRoute from './Components/PrivateRoute';
 import Register from './Components/Register';
+import { AuthProvider } from './Components/AuthContext';
 
 
 
@@ -45,6 +46,7 @@ function App() {
   ];
 
  return (
+ <AuthProvider>
     <Router>
       <Navbar />
       <Routes>
@@ -67,6 +69,7 @@ function App() {
       </Routes>
       <Comments />
     </Router>
+   </AuthProvider>
   );
 }
 
