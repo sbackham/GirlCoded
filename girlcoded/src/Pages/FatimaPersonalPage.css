@@ -1,0 +1,4 @@
+body {
+    background: linear-gradient(to right, #385bf5 49%, #ffc8d3 49%, #ffc8d3 100%);
+    margin: 0; /* Removes the default margin */
+  }

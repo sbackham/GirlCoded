@@ -43,8 +43,8 @@ function App() {
       name: 'Fatima Kammona',
       title: 'Full Stack Developer',
       bio: 'With expertise in both front and back end, Fatima can handle the full spectrum of web development.',
-      skills:'Skills: hi',
-      interests:'Interests: hi',
+      skills:'Skills: Java | C++ | C | Assembly | Linux | Python | Verilog | Virtuoso | Spectre | VHDL | Quartus | SPICE | MATLAB | FPGA • Git | Bash | Unit Testing | Visual Basic | CTF | Agile | Bilingual- English and Arabic | Limited Working- ASL',
+      interests:'Interests: Reading, sleeping and eating',
       imageUrl:  fatimaImage// Replace with the actual path to the image file
     }
 
