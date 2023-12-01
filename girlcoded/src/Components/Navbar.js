@@ -26,12 +26,14 @@ const Navbar = () => {
   return (
     <div className="background-container" style={backgroundStyle}>
       <nav className="navbar">
-        <Link to="/" className="nav-item">Home</Link>
-        <Link to="/projects" className="nav-item">Projects</Link>
-        <Link to="/team/sirena-backham" className="nav-item">Sirena</Link>
-        <Link to="/team/diego-diaz" className="nav-item">Diego</Link>
-        <Link to="/team/fatima-kammona" className="nav-item">Fatima</Link>
-        <Link to="/login" className="nav-item">Login</Link>
+        <Link to="/" className="nav-item home-link">Home</Link>
+        <div className="nav-group">
+          <Link to="/Pages/ProjectPage" className="nav-item">Projects</Link>
+          <Link to="/team/sirena-backham" className="nav-item">Sirena</Link>
+          <Link to="/team/diego-diaz" className="nav-item">Diego</Link>
+          <Link to="/team/fatima-kammona" className="nav-item">Fatima</Link>
+          <Link to="/login" className="nav-item">Login</Link>
+        </div>
       </nav>
     </div>
   );
