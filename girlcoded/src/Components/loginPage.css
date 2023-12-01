@@ -1,11 +1,8 @@
 .login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+
   /* Using a linear gradient to create the split backdrop */
  /* background: linear-gradient(to right, #add8e6 58%, #ffc0cb 4%); /* Adjust the colors to match the exact shades you want */
-  background: linear-gradient(to right, #385bf5 58%, #FADADD 42%); /* Adjust the colors to match the exact shades you want */
+  background: linear-gradient(to right, #385bf5 58%, #ffc8d3 42%); /* Adjust the colors to match the exact shades you want */
 }
 
 .login-form {

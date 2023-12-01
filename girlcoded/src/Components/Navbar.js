@@ -12,6 +12,7 @@ const Navbar = () => {
     '/team/sirena-backham': 'linear-gradient(to right, #385bf5 30%, #ffc8d3 30%, #ffc8d3 100%)',
     '/team/diego-diaz': 'linear-gradient(to right, #385bf5 81%, #ffc8d3 19%)',
     '/team/fatima-kammona': 'linear-gradient(to right, #385bf5 40%, #ffc8d3 40%, #ffc8d3 100%)',
+    '/Pages/ProjectPage': 'linear-gradient(to right, #385bf5 49%, #ffc8d3 49%, #ffc8d3 100%)',
   };
 
   // Determine the current gradient based on the path
