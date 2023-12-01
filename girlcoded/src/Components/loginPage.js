@@ -1,7 +1,8 @@
+// LoginPage.js
 import React from 'react';
-import Login from './Login';
 import { useNavigate } from 'react-router-dom';
-import './loginPage.css'; // Assuming your CSS is in LoginPage.css
+import Login from './Login';
+import './loginPage.css';
 
 const LoginPage = () => {
   let navigate = useNavigate();
@@ -10,11 +11,18 @@ const LoginPage = () => {
     navigate('/'); // Redirect to home page after successful login
   };
 
+  const handleNavigateToRegister = () => {
+    navigate('/register'); // Navigate to registration page
+  };
+
   return (
     <div className="login-container">
       <div className="login-form">
         <h1>Login</h1>
         <Login onLoginSuccess={handleLoginSuccess} />
+        <p className="register-link" onClick={handleNavigateToRegister}>
+          Don't have an account? Register here
+        </p>
       </div>
     </div>
   );

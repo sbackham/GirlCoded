@@ -11,6 +11,7 @@ import sirenaImage from './Images/sirena.png';
 import SirenaPersonalPage from './Pages/SirenaPersonalPage';
 import LoginPage from './Components/loginPage';
 import PrivateRoute from './Components/PrivateRoute';
+import Register from './Components/Register';
 
 
 
@@ -52,6 +53,8 @@ function App() {
         <Route path="/team/sirena-backham" element={<SirenaPersonalPage />} />
         <Route path="/team/diego-diaz" element={<TeamMemberPage teamMember={teamMembers.find(m => m.name === 'Diego Diaz')} />} />
         <Route path="/team/fatima-kammona" element={<TeamMemberPage teamMember={teamMembers.find(m => m.name === 'Fatima Kammona')} />} />
+
+        <Route path="/register" element={<Register />} />
         <Route
             path="/private-portfolio"
             element={

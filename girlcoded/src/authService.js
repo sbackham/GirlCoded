@@ -16,3 +16,8 @@ export const signOutUser = () => {
 export const observeAuthState = (callback) => {
   return onAuthStateChanged(auth, callback);
 };
+
+export const createUser = async (email, password) => {
+  await createUserWithEmailAndPassword(auth, email, password);
+};
+
