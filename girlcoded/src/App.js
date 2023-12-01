@@ -9,6 +9,7 @@ import groupPhoto from './Images/CatsPhoto.jpg';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import sirenaImage from './Images/sirena.png';
 import fatimaImage from './Images/fatima.jpg';
+import diegoImage from './Images/DiegoPhotos/diego.jpg';
 import SirenaPersonalPage from './Pages/SirenaPersonalPage';
 import DiegoPersonalPage from './Pages/DiegoPersonalPage';
 import FatimaPersonalPage from './Pages/FatimaPersonalPage';
@@ -33,15 +34,15 @@ function App() {
     },
     {
       name: 'Diego Diaz',
-      title: 'Backend Developer',
+      title: 'Computer Science Engineering',
       bio: 'Diego specializes in server-side logic and database management, ensuring data is processed efficiently.',
-      skills:'Skills: hi',
-      interests:'Interests: hi',
-      imageUrl: '/path/to/diego-image.jpg' // Replace with the actual path to the image file
+      skills:'Skills: Eating, Sleeping, MATLAB',
+      interests:'Interests: Cats, Mincraft, Youtube, 3d girls ',
+      imageUrl: diegoImage // Replace with the actual path to the image file
     },
     {
       name: 'Fatima Kammona',
-      title: 'Full Stack Developer',
+      title: 'Electrical Engineering and Computer Science Engineering',
       bio: 'With expertise in both front and back end, Fatima can handle the full spectrum of web development.',
       skills:'Skills: Java | C++ | C | Assembly | Linux | Python | Verilog | Virtuoso | Spectre | VHDL | Quartus | SPICE | MATLAB | FPGA • Git | Bash | Unit Testing | Visual Basic | CTF | Agile | Bilingual- English and Arabic | Limited Working- ASL',
       interests:'Interests: Reading, sleeping and eating',
