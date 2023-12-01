@@ -13,18 +13,30 @@
   border-radius: 10px; /* Optional: to have rounded corners */
   position: relative; /* To stay in the flow of the document */
   z-index: 1000; /* Ensure it's above the background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow to create a "floating" effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.45); /* Shadow to create a "floating" effect */
 }
+
+.home-link {
+  margin-right: auto; /* Pushes all other nav items to the right */
+}
+
+.nav-group {
+  display: flex;
+  margin-left: 4em; /* Adjust as needed to create gap from Home */
+}
+
 
 /* Styles for the nav items */
 .nav-item {
   padding: 10px 15px;
   text-decoration: none;
   color: #385bf5; /* Text color */
+  font-size: 1.1em; /* Increase font size */
   background-color: transparent; /* No background color by default */
   border-radius: 4px; /* Slight rounding of corners */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
+
 
 .nav-item:hover {
   background-color: #ffc8d3; /* Pink color on hover */

@@ -8,7 +8,11 @@ import Comments from './Components/Comments';
 import groupPhoto from './Images/CatsPhoto.jpg';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import sirenaImage from './Images/sirena.png';
+import fatimaImage from './Images/fatima.jpg';
 import SirenaPersonalPage from './Pages/SirenaPersonalPage';
+import DiegoPersonalPage from './Pages/DiegoPersonalPage';
+import FatimaPersonalPage from './Pages/FatimaPersonalPage';
+import ProjectPage from './Pages/ProjectPage';
 import LoginPage from './Components/loginPage';
 import PrivateRoute from './Components/PrivateRoute';
 import Register from './Components/Register';
@@ -41,7 +45,7 @@ function App() {
       bio: 'With expertise in both front and back end, Fatima can handle the full spectrum of web development.',
       skills:'Skills: hi',
       interests:'Interests: hi',
-      imageUrl: '/path/to/fatima-image.jpg' // Replace with the actual path to the image file
+      imageUrl:  fatimaImage// Replace with the actual path to the image file
     }
 
   ];
@@ -54,9 +58,9 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/" element={<HomePage teamMembers={teamMembers} groupPhotoUrl={groupPhoto} />} />
         <Route path="/team/sirena-backham" element={<SirenaPersonalPage />} />
-        <Route path="/team/diego-diaz" element={<TeamMemberPage teamMember={teamMembers.find(m => m.name === 'Diego Diaz')} />} />
-        <Route path="/team/fatima-kammona" element={<TeamMemberPage teamMember={teamMembers.find(m => m.name === 'Fatima Kammona')} />} />
-
+        <Route path="/team/diego-diaz" element={<DiegoPersonalPage />} />
+        <Route path="/team/fatima-kammona" element={<FatimaPersonalPage />} />
+        <Route path="/Pages/ProjectPage" element={<ProjectPage />} />
         <Route path="/register" element={<Register />} />
         <Route
             path="/private-portfolio"
