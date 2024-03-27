@@ -20,4 +20,6 @@ git clone https://github.com/sbackham/GirlCoded.git
 cd GirlCoded
 npm install react-firebase-hooks react-scripts
 
-![image](https://github.com/sbackham/GirlCoded/assets/91488129/fc270ae9-51ec-4ed3-b1ef-b3e5bfb174fa)
+```
+
+![image](https://github.com/sbackham/GirlCoded/assets/91488129/887b041c-5def-4136-ab08-1b368d631eec)
