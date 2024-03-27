@@ -1,7 +1,6 @@
 # GirlCoded
 
-Welcome to the GirlCoded repository! This project is dedicated to inspiring and supporting women in technology. Here, you'll find the source code for the GirlCoded website, an initiative to showcase the contributions of women in the tech industry and provide resources for those interested in pursuing a career in technology.
-
+Welcome to the GirlCoded repository! This project is my Senior design team's portfolio page, GirlCoded!
 ## Getting Started
 
 These instructions will help you set up a copy of the project on your local machine for development and testing purposes.
@@ -19,3 +18,5 @@ To clone the repository and get started with the project, follow these steps:
 ```bash
 git clone https://github.com/sbackham/GirlCoded.git
 cd GirlCoded
+npm install
+npm install react-firebase-hooks react-scripts
